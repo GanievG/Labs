@@ -83,7 +83,7 @@ void Library::setBookInLibrary(const Book& book)
 {
 	if ((book.getAuthor().empty()) || (book.getName().empty()))
 	{ 
-		throw("Îøèáêà äîáàâëåíèÿ êíèãè"); 
+		throw("ошибка"); 
 	}
 	else 
 	{ 
