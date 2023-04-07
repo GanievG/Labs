@@ -24,9 +24,9 @@ void Library::CaseInformationPrint()
 		}
 	}
 
-	std::cout << "Данные:\n";
-	std::cout << "Художественных: " << artcount << "\n";
-	std::cout << "Технических: " << techcount << "\n";
+	std::cout << "Р”Р°РЅРЅС‹Рµ:\n";
+	std::cout << "РҐСѓРґРѕР¶РµСЃС‚РІРµРЅРЅС‹С…: " << artcount << "\n";
+	std::cout << "РўРµС…РЅРёС‡РµСЃРєРёС…: " << techcount << "\n";
 }
 
 void Library::InformationPrint()
@@ -46,9 +46,9 @@ void Library::InformationPrint()
 		}
 	}
 
-	std::cout << "Данные:\n";
-	std::cout << "Художественных: " << artcount << "\n";
-	std::cout << "Технических: " << techcount << "\n";
+	std::cout << "Р”Р°РЅРЅС‹Рµ:\n";
+	std::cout << "РҐСѓРґРѕР¶РµСЃС‚РІРµРЅРЅС‹С…: " << artcount << "\n";
+	std::cout << "РўРµС…РЅРёС‡РµСЃРєРёС…: " << techcount << "\n";
 }
 
 Library::Library(const Book& book)
@@ -83,7 +83,7 @@ void Library::setBookInLibrary(const Book& book)
 {
 	if ((book.getAuthor().empty()) || (book.getName().empty()))
 	{ 
-		throw("Ошибка добавления книги"); 
+		throw("ГЋГёГЁГЎГЄГ  Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЄГ­ГЁГЈГЁ"); 
 	}
 	else 
 	{ 
@@ -95,7 +95,7 @@ void Library::setBookInLibrary(const Book& book)
 //	{
 //		if ((author_.empty()) || (name_.empty()))
 //		{ 
-//			throw("Ошибка добавления книги"); 
+//			throw("ГЋГёГЁГЎГЄГ  Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЄГ­ГЁГЈГЁ"); 
 //		}
 //		else
 //		{
@@ -107,7 +107,7 @@ void Library::setBookInLibrary(const Book& book)
 //{
 //	if ((author_.empty()) || (name_.empty()))
 //	{ 
-//		throw("Ошибка добавления книги");
+//		throw("ГЋГёГЁГЎГЄГ  Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГї ГЄГ­ГЁГЈГЁ");
 //	}
 //	else
 //	{
@@ -115,7 +115,7 @@ void Library::setBookInLibrary(const Book& book)
 //	}
 //}
 //std::vector<Book> Library::library{
-//		Book("Китлер", "Моя миска", BookType::ART),
-//		Book("Пушкин", "Евгений Онегин", BookType::TECH),
-//		Book("Страуструп", "Язык программирования C++")
+//		Book("ГЉГЁГІГ«ГҐГ°", "ГЊГ®Гї Г¬ГЁГ±ГЄГ ", BookType::ART),
+//		Book("ГЏГіГёГЄГЁГ­", "Г…ГўГЈГҐГ­ГЁГ© ГЋГ­ГҐГЈГЁГ­", BookType::TECH),
+//		Book("Г‘ГІГ°Г ГіГ±ГІГ°ГіГЇ", "ГџГ§Г»ГЄ ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГї C++")
 //};
