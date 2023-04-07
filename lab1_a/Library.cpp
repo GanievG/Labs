@@ -46,9 +46,9 @@ void Library::InformationPrint()
 		}
 	}
 
-	std::cout << "Äàííûå:\n";
-	std::cout << "Õóäîæåñòâåííûõ: " << artcount << "\n";
-	std::cout << "Òåõíè÷åñêèõ: " << techcount << "\n";
+	std::cout << "Данные:\n";
+	std::cout << "Художественных: " << artcount << "\n";
+	std::cout << "Технических: " << techcount << "\n";
 }
 
 Library::Library(const Book& book)
