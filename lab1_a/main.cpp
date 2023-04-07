@@ -27,9 +27,18 @@ int main()
 	int typebook;
 	cin >>typebook;
 
-	if (typebook == 0) { b.setType(BookType::ART); }
-	else if (typebook == 1) { b.setType(BookType::TECH); }
-	else { b.setType(BookType::UNKNOWN); }
+	if (typebook == 0) 
+	{ 
+		b.setType(BookType::ART); 
+	}
+	else if (typebook == 1) 
+	{ 
+		b.setType(BookType::TECH); 
+	}
+	else
+	{
+		b.setType(BookType::UNKNOWN);
+	}
 
 	lib.setBookInLibrary(b);
 
