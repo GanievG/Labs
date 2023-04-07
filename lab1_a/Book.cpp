@@ -23,17 +23,17 @@ Book::Book(const std::string& author1, const std::string& name1, BookType& type1
 {
 	if ((author1.empty()) || (name1.empty()) )
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 
 	else if (count(author1.begin(), author1.end(), ' ') == author1.length()) 
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 
 	else if (count(name1.begin(), name1.end(), ' ') == name1.length()) 
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 	else
 	{
@@ -43,7 +43,7 @@ Book::Book(const std::string& author1, const std::string& name1, BookType& type1
 	}
 }
 
-const char* Book::getBookType() const// "const string& Book::getBookType() const" не работает
+const char* Book::getBookType() const// "const string& Book::getBookType() const" Г­ГҐ Г°Г ГЎГ®ГІГ ГҐГІ
 {
 	if (this->type == BookType::ART)
 	{
@@ -64,17 +64,17 @@ Book::Book(const std::string& author1, const std::string& name1)
 {
 	if ((author1.empty()) || (name1.empty()))
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 	
 	if (count(author1.begin(), author1.end(), ' ') == author1.length())
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 	
 	if (count(name1.begin(), name1.end(), ' ') == name1.length())
 	{
-		throw std::invalid_argument("Ошибка");
+		throw std::invalid_argument("error");
 	}
 	else
 	{
@@ -100,12 +100,12 @@ void Book::setAuthor(const std::string& author1)
 	{
 		if ((count(author1.begin(), author1.end(), ' ') == author1.length()))
 		{
-			throw std::invalid_argument("Ошибка, некорректное имя автора!");
+			throw std::invalid_argument("error");
 		}
 	}
 	if (author1.empty()) 
 	{
-		throw std::invalid_argument("Ошибка, не написали имя автора!");
+		throw std::invalid_argument("error");
 	}
 	else
 	{ 
@@ -119,12 +119,12 @@ void Book::setName(const std::string& name1) {
 	{
 		if ((count(name1.begin(), name1.end(), ' ') == name1.length())) 
 		{
-			throw std::invalid_argument("Ошибка, некорректное имя автора!");
+			throw std::invalid_argument("error");
 		}
 	}
 	if (name1.empty()) 
 	{ 
-		throw std::invalid_argument("Ошибка, не написали имя автора!");
+		throw std::invalid_argument("error");
 	}
 	else 
 	{ 
@@ -144,10 +144,10 @@ const std::string& Book::getName() const
 
 std::ostream& operator<<(std::ostream& stream, const Book& b)
 {
-	//перегрузка оператора "<<"
-	std::cout<< "Автор - "<< b.getAuthor() << std::endl;
-	std::cout<< "Назавние - "<< b.getName() << std::endl;
-	std::cout << "Тип - " <<b.getBookType() << std::endl;
+	//ГЇГҐГ°ГҐГЈГ°ГіГ§ГЄГ  Г®ГЇГҐГ°Г ГІГ®Г°Г  "<<"
+	std::cout<< "РђРІС‚РѕСЂ - "<< b.getAuthor() << std::endl;
+	std::cout<< "РќР°Р·РІР°РЅРёРµ - "<< b.getName() << std::endl;
+	std::cout << "РўРёРї - " <<b.getBookType() << std::endl;
 	return stream;
 }
 
