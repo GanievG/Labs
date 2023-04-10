@@ -11,7 +11,7 @@ public:
     
     virtual ~BMW();
 
-    //virtual std::string getModel() const override;
+    //virtual std::string getModel() const override;//
 };
 
 #endif // !BMW_H
