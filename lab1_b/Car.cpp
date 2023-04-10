@@ -6,7 +6,7 @@ Car::Car(const std::string& company_, const std::string& model_):company(company
 
 Car::~Car() 
 {
-    std::cout << "Вызвался деструктор, марка автомобиля = " << company << ", модель = " << model << std::endl;
+    std::cout << "РєРѕРјРїР°РЅРёСЏ = " << company << ", РјРѕРґРµР»СЊ = " << model << std::endl;
 }
 //Car::Car(const std::string& model_):model(model_) {}
 
